@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Decodificador/css/reset.css">
+        <link rel="stylesheet" href="../Decodificador/css/style.css">
+        
+    
+        <title>Decodificador - Challenge Alura</title>
+
+    </head>
+
+    <header>
+        <nav class="caixa__conteudo">
+          <h1 class="caixa__titulo">Mermaid Code</h1>
+          <img class="caixa__imagem" src="../Decodificador/pictures/sereia.png" alt="Cauda da sereia">
+        </nav>
+    </header>
+
+    <div class = "container">
+        <section class="grupo-esquerda">
+            <section class="input__caixa">
+                <h2 class="input__titulo">Qual mensagem você quer codificar?</h2>
+                <textarea id="input__entrada" placeholder="Digite aqui seu texto."></textarea>
+            <section class="botoes__principais">
+                    <button id="botao__criptografar" onclick="criptografaTexto()">Criptografar</button>
+                    <button id="botao__descriptografar" onclick="descriptografaTexto()">Descriptografar</button>
+            </section>
+                
+            </section>
+
+            <section class="aviso__container">
+                <p id="aviso__texto">
+                    <img id="aviso__imagem" src="../Decodificador/pictures/exclamacao.png">
+                    Apenas letras minúsculas e sem acentos!
+                </p>
+            </section>
+        </section>
+
+        <section class="grupo-direita">
+            <textarea id="input__saida" placeholder="O texto sairá aqui!" readonly></textarea>
+        <section class="botoes__secundarios">
+            <button id="botao__copiar" onclick="copiaTexto()">Copiar</button>
+            <button id="botao__apagar" onclick="limpaCampos()">Apagar</button>
+        </section>
+    </section>
+    </div>
+        
+    <footer class="footer__pagina">
+        <a href="https://github.com/Kahcrisoliver" target="_blank"><img src="../Decodificador/pictures/github.png"></a>
+        <a href="https://www.linkedin.com/in/karcoliveira/" target="_blank"><img src="../Decodificador/pictures/linkedin.png"></a>
+        <p>Desenvolvido por Karen Oliveira ♡</p>
+    </footer>
+    
+    <!-- SCRIPTS -->
+    <script src="../Decodificador/scripts/criptografia.js"></script>
+    <script src="../Decodificador/scripts/descriptografia.js"></script>
+    <script src="../Decodificador/scripts/copiatexto.js"></script>
+    <script src="../Decodificador/scripts/limpacampo.js"></script>
+    
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
